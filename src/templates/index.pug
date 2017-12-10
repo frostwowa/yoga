@@ -1,0 +1,290 @@
+---
+title: Index Page
+---
+extends layouts/_layout
+block content
+	// main
+	.main
+		.main__center.center
+			.main__row
+				.main__col
+					// form
+					form.main__form.form
+						.form__title Trial Class
+						// field
+						.form__field.field
+							.field__in
+								input.field__input.input(type="text" placeholder="Enter your name" required)
+						// field
+						.form__field.field
+							.field__in
+								input.field__input.input(type="text" placeholder="Enter your phone" required)
+						// field
+						.form__field.field
+							.field__in
+								select.field__select.select
+									option(selected) Chose your class
+									option 1 class
+									option 2 class
+									option 3 class
+						.form__btn
+							button.form__button.button Try it
+				.main__col
+					.main__wrap
+						.main__title Just Balance <br> your Mind & Body 
+						.main__text Create the healthy living <br> for yourself
+	// program
+	.program
+		.program__anchor.anchor(id="reservation")
+		.program__center.center
+			.program__title.title Yoga FEATURE PROGRAM
+			.program__info Our Classes
+			.program__row
+				a.program__col(href="#")
+					.program__in
+						.program__preview(style="background-image: url('/img/program-pic-1.jpg');")
+						.program__wrap
+							.program__yoga Yoga For Health
+							.program__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+							.program__name Ashtanga - Hatha
+				a.program__col(href="#")
+					.program__in
+						.program__preview(style="background-image: url('/img/program-pic-1.jpg');")
+						.program__wrap
+							.program__yoga Yoga For Health
+							.program__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+							.program__name Ashtanga - Hatha
+			.program__row
+				a.program__col(href="#")
+					.program__in
+						.program__preview(style="background-image: url('/img/program-pic-1.jpg');")
+						.program__wrap
+							.program__yoga Yoga For Health
+							.program__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+							.program__name Ashtanga - Hatha
+				a.program__col(href="#")
+					.program__in
+						.program__preview(style="background-image: url('/img/program-pic-1.jpg');")
+						.program__wrap
+							.program__yoga Yoga For Health
+							.program__text Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+							.program__name Ashtanga - Hatha
+	// gallery
+	.gallery
+		.gallery__anchor.anchor(id="gallery")
+		.gallery__center.center
+			.gallery__wrap
+				a.gallery__item(data-fancybox="album" href="img/pic-1.jpg" style="background-image: url('/img/pic-1.jpg');")
+					.gallery__magnifer
+						.gallery__icon
+							+i('magnifer')
+				a.gallery__item(data-fancybox="album" href="img/pic-2.jpg" style="background-image: url('/img/pic-2.jpg');")
+					.gallery__magnifer
+						.gallery__icon
+							+i('magnifer')
+				a.gallery__item(data-fancybox="album" href="img/pic-1.jpg" style="background-image: url('/img/pic-1.jpg');")
+					.gallery__magnifer
+						.gallery__icon
+							+i('magnifer')
+				a.gallery__item(data-fancybox="album" href="img/pic-2.jpg" style="background-image: url('/img/pic-2.jpg');")
+					.gallery__magnifer
+						.gallery__icon
+							+i('magnifer')
+				a.gallery__item(data-fancybox="album" href="img/pic-1.jpg" style="background-image: url('/img/pic-1.jpg');")
+					.gallery__magnifer
+						.gallery__icon
+							+i('magnifer')
+				a.gallery__item(data-fancybox="album" href="img/pic-2.jpg" style="background-image: url('/img/pic-2.jpg');")
+					.gallery__magnifer
+						.gallery__icon
+							+i('magnifer')
+				a.gallery__item(data-fancybox="album" href="img/pic-1.jpg" style="background-image: url('/img/pic-1.jpg');")
+					.gallery__magnifer
+						.gallery__icon
+							+i('magnifer')
+				a.gallery__item(data-fancybox="album" href="img/pic-2.jpg" style="background-image: url('/img/pic-2.jpg');")
+					.gallery__magnifer
+						.gallery__icon
+							+i('magnifer')
+	// about
+	.about
+		.about__anchor.anchor(id="about")
+		.about__center.center
+			.about__row
+				.about__col
+					.about__wrap
+						.about__title.title About us
+						.about__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.
+				.about__col
+					.about__slider.slider.owl-carousel
+						.slider__item
+							img.slider__pic(src="img/slider-1.jpg")
+						.slider__item
+							img.slider__pic(src="img/slider-2.jpg")
+						.slider__item
+							img.slider__pic(src="img/slider-1.jpg")
+						.slider__item
+							img.slider__pic(src="img/slider-2.jpg")
+	// feature
+	.feature
+		.feature__anchor.anchor(id="elements")
+		.feature__center.center
+			.feature__row
+				.feature__col
+					.feature__preview
+						+i('feature-1')
+					.feature__name IMPROVED OVERALL <br> HEALTH
+					.feature__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.feature__col
+					.feature__preview
+						+i('feature-2')
+					.feature__name INCREASED <br> CONCENTRATION
+					.feature__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.feature__col
+					.feature__preview
+						+i('feature-3')
+					.feature__name BLANCE <br> YOUR MIND
+					.feature__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.feature__col
+					.feature__preview
+						+i('feature-4')
+					.feature__name SLEEP <br> BETTER
+					.feature__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+			.feature__row
+				.feature__col
+					.feature__preview
+						+i('feature-5')
+					.feature__name WEIGHT LOSS
+					.feature__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.feature__col
+					.feature__preview
+						+i('feature-6')
+					.feature__name STRENGTHENS <br> YOUR BONES
+					.feature__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.feature__col
+					.feature__preview
+						+i('feature-7')
+					.feature__name INCREASED <br> FLEXIBILITY
+					.feature__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+				.feature__col
+					.feature__preview
+						+i('feature-8')
+					.feature__name LOWER BLOOD <br> PRESSURE
+					.feature__text Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.
+	// wrap
+	.wrap
+		.wrap__center.center
+			// price
+			.wrap__price.price
+				.price__anchor.anchor(id="shop")
+				.price__row
+					.price__col.js-price
+						.price__head.js-price-head
+							span.price__dollar $
+							span.price__number 49
+							span.price__month / month
+						.price__body
+							.price__list
+								.price__item ENTRY DATE: MON – FRI
+								.price__item ENTRY TIME: 8A.M – 8P.M
+								.price__item NUTRITION ADVICER: NO
+							.price__btn
+								a.price__button.button.js-price-btn(href="#") Buy now
+					.price__col.js-price
+						.price__head.js-price-head
+							span.price__dollar $
+							span.price__number 69
+							span.price__month / month
+						.price__body
+							.price__list
+								.price__item ENTRY DATE: MON – FRI
+								.price__item ENTRY TIME: 8A.M – 8P.M
+								.price__item NUTRITION ADVICER: YES
+							.price__btn
+								a.price__button.button.js-price-btn(href="#") Buy now
+					.price__col.js-price
+						.price__head.js-price-head
+							span.price__dollar $
+							span.price__number 99
+							span.price__month / month
+						.price__body
+							.price__list
+								.price__item ENTRY DATE: MON – SUN
+								.price__item ENTRY TIME: 8A.M – 8P.M
+								.price__item NUTRITION ADVICER: YES
+							.price__btn
+								a.price__button.button.js-price-btn(href="#") Buy now
+			// comment
+			.wrap__comment.comment
+				.comment__anchor.anchor(id="blog")
+				.comment__carousel.owl-carousel.owl-carousel_comment
+					.comment__item
+						.comment__in
+							.comment__preview
+								.comment__ava.comment__ava_user
+									img.comment__pic(src="img/ava.png")
+							.comment__body
+								.comment__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+								.comment__user
+									.comment__post Trainer
+									.comment__man Laura Shepard
+								.comment__info
+									.comment__ava.comment__ava_worker
+										img.comment__pic(src="img/ava-small.jpg")
+									.comment__worker
+										.comment__man Sara Taylor
+										.commant__post Trainer
+					.comment__item
+						.comment__in
+							.comment__preview
+								.comment__ava.comment__ava_user
+									img.comment__pic(src="img/ava-1.jpg")
+							.comment__body
+								.comment__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. consectetur adipisicing elit, sed do e consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+								.comment__user
+									.comment__post Trainer
+									.comment__man Sara Taylor
+								.comment__info
+									.comment__ava.comment__ava_worker
+										img.comment__pic(src="img/ava-small-1.jpg")
+									.comment__worker
+										.comment__man Laura S
+										.commant__post Trainer
+					.comment__item
+						.comment__in
+							.comment__preview
+								.comment__ava.comment__ava_user
+									img.comment__pic(src="img/ava.png")
+							.comment__body
+								.comment__text Lorem 
+								.comment__user
+									.comment__post Trainer
+									.comment__man Laura Shepard
+								.comment__info
+									.comment__ava.comment__ava_worker
+										img.comment__pic(src="img/ava-small.jpg")
+									.comment__worker
+										.comment__man Sara Taylor
+										.commant__post Trainer
+					.comment__item
+						.comment__in
+							.comment__preview
+								.comment__ava.comment__ava_user
+									img.comment__pic(src="img/ava-1.jpg")
+							.comment__body
+								.comment__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.
+								.comment__user
+									.comment__post Trainer
+									.comment__man Laura Shepard
+								.comment__info
+									.comment__ava.comment__ava_worker
+										img.comment__pic(src="img/ava-small-1.jpg")
+									.comment__worker
+										.comment__man Sara Taylor
+										.commant__post Trainer
+
+
+
+
+
+
